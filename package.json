@@ -1,0 +1,15 @@
+{
+  "name": "hobunwindx",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "tailwind": "bunx tailwindcss -i ./src/tmp/index.css -o ./src/css/index.css"
+  },
+  "dependencies": {
+    "@types/tailwindcss": "^3.1.0",
+    "hono": "^4.4.7",
+    "tailwindcss": "^3.4.4"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
