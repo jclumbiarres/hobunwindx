@@ -8,6 +8,7 @@ import { Home } from "$pages/Home";
 import { Contact } from "$pages/Contact";
 import { About } from "$pages/About";
 import { QueryBuilder } from "$lib/queryBuilder";
+import { Login } from "$components/core/Login";
 
 const app = new Hono();
 
@@ -37,6 +38,9 @@ app.get("/contact", (c) => {
 
 app.get("/about", (c) => {
   return c.html(About());
+});
+app.get("/login", (c) => {
+  return c.html(Login());
 });
 
 process.on("exit", () => {

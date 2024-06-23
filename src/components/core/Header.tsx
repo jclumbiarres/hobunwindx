@@ -26,6 +26,14 @@ export const Header = () => {
         >
           Contact
         </a>
+        <a
+          href="#"
+          hx-get="/login"
+          hx-target="#root"
+          class="text-white text-lg font-bold"
+        >
+          Login
+        </a>
       </nav>
     </header>
   );
