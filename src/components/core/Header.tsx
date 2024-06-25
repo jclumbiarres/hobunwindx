@@ -1,15 +1,13 @@
+import { ALink } from "./Link";
 export const Header = () => {
   return (
     <header class="bg-gray-800 py-4">
       <nav class="container mx-auto flex justify-between items-center">
-        <a
-          href="#"
-          hx-get="/home"
-          hx-target="#root"
-          class="text-white text-lg font-bold"
-        >
-          Home
-        </a>
+        <ALink
+          className="text-white text-lg font-bold"
+          url="/home"
+          desc="Home"
+        />
         <a
           href="#"
           hx-get="/about"

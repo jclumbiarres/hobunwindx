@@ -2,7 +2,7 @@
   "name": "hobunwindx",
   "scripts": {
     "dev": "bun run --hot src/index.ts",
-    "tailwind": "bunx tailwindcss -i ./src/tmp/input.css -o ./src/css/index.css"
+    "tailwind": "bunx tailwindcss -i ./src/tmp/input.css -o ./src/css/index.css --watch"
   },
   "dependencies": {
     "@types/tailwindcss": "^3.1.0",
