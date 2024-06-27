@@ -43,7 +43,8 @@ app.get("/login", (c) => {
   return c.html(Login());
 });
 
-process.on("exit", () => {
+process.on("SIGINT", () => {
+  console.log("Closing database connection");
   db.close();
   process.exit(0);
 });
