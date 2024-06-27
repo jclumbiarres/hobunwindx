@@ -2,13 +2,18 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-     "$components/*": ["src/components/*"],
-     "$lib/*": ["src/lib/*"],
-     "$pages/*": ["src/components/pages/*"],
+      "$components/*": [
+        "src/components/*"
+      ],
+      "$lib/*": [
+        "src/lib/*"
+      ],
+      "$pages/*": [
+        "src/components/pages/*"
+      ],
     },
     "strict": true,
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx",
-
   }
 }

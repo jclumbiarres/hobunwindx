@@ -3,12 +3,12 @@ import { logger } from "hono/logger";
 import { serveStatic } from "hono/bun";
 import { Database } from "bun:sqlite";
 
-import { Content } from "$components/core/Layout";
+import { Content } from "$components/layout/Layout";
 import { Home } from "$pages/Home";
 import { Contact } from "$pages/Contact";
 import { About } from "$pages/About";
 import { QueryBuilder } from "$lib/queryBuilder";
-import { Login } from "$components/core/Login";
+import { Login } from "$components/pages/Login";
 
 const app = new Hono();
 

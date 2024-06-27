@@ -1,4 +1,4 @@
-import { ALink } from "./Link";
+import { ALink } from "../core/Link";
 export const Header = () => {
   return (
     <header class="bg-gray-800 py-4">

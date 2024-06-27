@@ -3,6 +3,12 @@ import { Header } from "./Header";
 import { JSX } from "hono/jsx";
 import { html } from "hono/html";
 
+/**
+ * Renders the layout component.
+ * 
+ * @param children - The content to be rendered inside the layout.
+ * @returns The HTML markup for the layout.
+ */
 export const Layout = ({ children }: { children: JSX.HTMLAttributes }) => html`
   <!DOCTYPE html>
   <html lang="en">
@@ -20,6 +26,10 @@ export const Layout = ({ children }: { children: JSX.HTMLAttributes }) => html`
   </html>
 `;
 
+/**
+ * Renders the content component within the layout.
+ * @returns The JSX element representing the content component within the layout.
+ */
 export const Content = async () => {
   return (
     <Layout>
