@@ -31,7 +31,7 @@ export const Layout = ({ children }: { children: JSX.HTMLAttributes }) => html`
  * Renders the content component within the layout.
  * @returns The JSX element representing the content component within the layout.
  */
-export const Content = async () => {
+export const Content = () => {
   return (
     <Layout>
       <Home />

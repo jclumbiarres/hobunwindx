@@ -1,6 +1,6 @@
 export const Login = () => {
   return (
-    <div class="flex items-center justify-center h-screen bg-gray-200">
+    <div class="flex items-center justify-center h-screen bg-gray-200 overflow-hidden">
       <div class="bg-white p-8 rounded-lg shadow-lg">
         <h1 class="text-2xl font-bold text-gray-700">Login</h1>
         <form class="mt-4">
