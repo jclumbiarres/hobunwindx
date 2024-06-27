@@ -1,3 +1,5 @@
 export const About = () => {
-  return <h1 class="text-9xl text-blue-900">la</h1>;
+  return (
+    <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
+  );
 };

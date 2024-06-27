@@ -23,6 +23,7 @@ db.insertInto("users", ["name", "password"], ["admin", "admin"]).execute();
 app.use(logger());
 app.use("/js/htmx.min.js", serveStatic({ path: "./src/js/htmx.min.js" }));
 app.use("/css/index.css", serveStatic({ path: "./src/css/index.css" }));
+app.use("/js/alpinejs.min.js", serveStatic({ path: "./src/js/alpinejs.min.js" }));
 
 app.get("/", (c) => {
   return c.html(Content());
