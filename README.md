@@ -13,6 +13,19 @@ Usa el soporte de Bun para las plantillas JSX/TSX, Path Alias configurados en ts
 
 ---
 
+## Enlaces
+
+Los enlaces funcionan usando hx-get y hx-target de HTMX, en el componente ALink se pasan los argumentos:
+```ts
+        <ALink
+          className="text-white text-lg font-bold"
+          url="/home"
+          desc="Home"
+        />
+```
+
+---
+
 To install dependencies:
 
 ```sh
