@@ -16,13 +16,25 @@ Usa el soporte de Bun para las plantillas JSX/TSX, Path Alias configurados en ts
 ## Enlaces
 
 Los enlaces funcionan usando hx-get y hx-target de HTMX, en el componente ALink se pasan los argumentos:
-```ts
+```tsx
         <ALink
           className="text-white text-lg font-bold"
           url="/home"
           desc="Home"
         />
 ```
+También puedes indicarle el target:
+
+```tsx
+        <ALink
+          className="text-white text-lg font-bold"
+          url="/home"
+          desc="Home"
+          target="#app"
+        />
+```
+
+En caso de no pasar ningún argumento en target por defecto usará hx-target="#root"
 
 ---
 
