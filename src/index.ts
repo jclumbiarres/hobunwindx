@@ -45,6 +45,18 @@ app.get("/login", (c) => {
   return c.html(Login());
 });
 
+app.post("/login", async (c) => {
+  const body = await c.req.parseBody();
+  const email = body.email;
+  const password = body.password;
+
+  if (email === "admin@example.com" && password === "admin") {
+    return c.html("<p>Login successful!</p>");
+  } else {
+    return c.html("<p>Invalid email or password.</p>");
+  }
+});
+
 process.on("SIGINT", () => {
   console.log("Closing database connection");
   db.close();
